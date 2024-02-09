@@ -33,6 +33,7 @@ public class UrlReader {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
                 // declaring an empty string
                 String line = "";
+                System.out.println("--------------------" + url + "--------------------");
                 // while loop that loops until string "line" is null which is when "line = bufferedReader.readLine()" has no more to read.
                 while (line != null) {
                     // Making sure characters in line is set to lowercase (and printing the lines)

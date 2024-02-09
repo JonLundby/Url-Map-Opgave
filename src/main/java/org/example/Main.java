@@ -19,7 +19,7 @@ public class Main {
         long startTime = System.currentTimeMillis();
         Map<String, Map<String, Integer>> urlsMap = urlReader.readUrls(urls, words);
         urlsMap.forEach((key, mapWordsInner) -> {
-            System.out.print("På \"" + key + "\" forekommer ordet \n");
+            System.out.print("\n" + "På \"" + key + "\" forekommer ordet: \n");
             mapWordsInner.forEach((word, count) -> System.out.println("\"" + word + "\" " + count + " antal gange."));
         });
 

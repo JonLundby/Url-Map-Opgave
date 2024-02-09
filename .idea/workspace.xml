@@ -80,7 +80,7 @@
       <workItem from="1707483574361" duration="370000" />
       <workItem from="1707483963554" duration="634000" />
       <workItem from="1707488809012" duration="14592000" />
-      <workItem from="1707505677890" duration="7683000" />
+      <workItem from="1707505677890" duration="8563000" />
     </task>
     <task id="LOCAL-00001" summary="Counting words with urlReader working">
       <option name="closed" value="true" />
@@ -105,7 +105,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>26</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
