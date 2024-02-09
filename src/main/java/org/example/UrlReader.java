@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -34,7 +35,7 @@ public class UrlReader {
                 String line = "";
                 // while loop that loops until string "line" is null which is when "line = bufferedReader.readLine()" has no more to read.
                 while (line != null) {
-                    // Making sure characters in line is set to lowercase and printing it
+                    // Making sure characters in line is set to lowercase (and printing the lines)
                     String lineToLower = " " + line.toLowerCase() + " ";
                     System.out.println(lineToLower);
 
@@ -62,5 +63,15 @@ public class UrlReader {
         return mapWords;
     }
 
+    public Map<String, Map<String, Integer>> readUrls(List<String> urls, List<String> words) {
+        Map<String, Map<String, Integer>> mapUrlWords = new HashMap<>();
+        for (String url: urls) {
+            Map<String, Integer> mapWordsInner = new HashMap<>();
+            mapWordsInner = this.readUrl(url, words);
+            mapUrlWords.put(url, mapWordsInner);
+        }
+
+        return mapUrlWords;
+    }
 
 }
